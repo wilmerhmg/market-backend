@@ -59,3 +59,9 @@ typings/
 
 # next.js build output
 .next
+
+# MySQL server Data Store
+store
+hi.txt
+package-lock.json
+app.js

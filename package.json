@@ -1,0 +1,30 @@
+{
+  "name": "market-backend",
+  "version": "1.0.0",
+  "description": "Marketplace backent API restful",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dev-Wito/market-backend.git"
+  },
+  "keywords": [
+    "node",
+    "restful",
+    "api"
+  ],
+  "author": "Wilmer H. Muñoz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dev-Wito/market-backend/issues"
+  },
+  "homepage": "https://github.com/Dev-Wito/market-backend#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql2": "^1.6.5",
+    "sequelize": "^4.42.0"
+  }
+}
