@@ -2,10 +2,12 @@
 chmod -R +x *.sh
 
 clear
-echo "Seleccione el tipo de despliegue:"
-echo "1. Entorno de produccion"
-echo "2. Entorno de desarrollo"
+echo "Select the type of deployment:"
+echo "1. Production environment"
+echo "2. Development environment"
 printf "Codigo: " && read codigo
+
+bash start.mysql.sh
 
 if [ "$codigo" == "1" ]
 then
