@@ -1,0 +1,24 @@
+{
+  "Categories": [
+    {
+      "id_category": 1,
+      "description": "Accessories for Cell phones",
+      "parent_id": null
+    },
+    {
+      "id_category": 2,
+      "description": "Cellphones and Smartphones",
+      "parent_id": null
+    },
+    {
+      "id_category": 3,
+      "description": "Memories for Smartphones",
+      "parent_id": null
+    },
+    {
+      "id_category": 4,
+      "description": "Smartwatch",
+      "parent_id": null
+    }
+  ]
+}

@@ -1,8 +1,12 @@
 module.exports = (sequelize, DataType) => {
-   const Stock = sequelize.define('Stock', {
+   const Stock = sequelize.define('Posts', {
+      id_post:{
+         type: DataType.UUID,
+         primaryKey: true,
+         defaultValue: DataType.UUIDV1,
+      },
       sku: {
          type: DataType.STRING(17),
-         primaryKey: true,
          allowNull: false,
          validate: {
             notEmpty: {
@@ -14,11 +18,14 @@ module.exports = (sequelize, DataType) => {
          }
       },
 
+   }, {
+      tableName: 'posts'
    });
 
    Stock.associate = (models) => {
 
    };
+
 
    return Stock;
 };
