@@ -36,8 +36,8 @@ module.exports = (sequelize, DataType) => {
       hooks: {
          // executed "after" `Model.sync(...)`
          afterSync: function (options) {
-            // this = Model
-            this.bulkCreate(pictures, {validate: false});
+            // this = Model Load Fake Data
+            this.bulkCreate(pictures);
          }
       }
    });

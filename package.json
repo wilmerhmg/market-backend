@@ -4,7 +4,7 @@
   "description": "Marketplace backent API restful",
   "main": "app.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel src --out-dir dist",
+    "build": "./node_modules/.bin/babel src --out-dir dist --copy-files",
     "babel-node": "babel-node src/app.js",
     "dev": "nodemon --exec npm run babel-node",
     "start": "node dist/app.js",

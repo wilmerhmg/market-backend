@@ -5,8 +5,7 @@ var _express = _interopRequireDefault(require("express"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (app) {
-  console.log('Middleware load...'); // Settings
-
+  // Settings
   app.set('port', process.env.MRKP_BACK_PORT || 14002);
   app.set('json spaces', 4); // middlewares
 
@@ -15,4 +14,5 @@ module.exports = function (app) {
     res.setHeader('X-Powered-By', 'CondorLabs');
     next();
   });
+  console.log('Middleware load...');
 };

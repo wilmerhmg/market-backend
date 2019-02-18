@@ -28,7 +28,7 @@ module.exports = (sequelize, DataType) => {
          // executed "after" `Model.sync(...)`
          afterSync: function (options) {
             // this = Model
-            this.bulkCreate(categories, {validate: false});
+            this.bulkCreate(categories);
          }
       }
    });

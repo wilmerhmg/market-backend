@@ -9,4 +9,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var app = (0, _express.default)();
 (0, _consign.default)({
   cwd: __dirname
-}).include('config/init.js').then('config/db.js').then('core/middlewares.js').then('routes').then('core/boot.js').into(app);
+}).include('config/init.js').then('config/db.js').then('core/middlewares.js').then('controllers').then('routes').then('core/boot.js').into(app);
