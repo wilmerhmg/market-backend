@@ -1,7 +1,7 @@
-import { Categories } from '../config/init.data';
+import { categories } from '../config/init.data';
 
 module.exports = (sequelize, DataType) => {
-   const categories = sequelize.define('Categories', {
+   const Categories = sequelize.define('Categories', {
       id_category: {
          type: DataType.INTEGER,
          primaryKey: true,
@@ -28,14 +28,18 @@ module.exports = (sequelize, DataType) => {
          // executed "after" `Model.sync(...)`
          afterSync: function (options) {
             // this = Model
-            this.bulkCreate(Categories);
+            this.bulkCreate(categories, {validate: false});
          }
       }
    });
 
-   categories.associate = (models) => {
+   /*Create foreign keys and associations between models*/
+   Categories.associate = (models) => {
+
+      /*A category has many post*/
+      Categories.hasMany(models.Posts, {foreignKey: 'category_id', foreignKeyConstraint: true});
 
    };
 
-   return categories;
+   return Categories;
 };

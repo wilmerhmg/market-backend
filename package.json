@@ -30,6 +30,7 @@
     "@babel/core": "^7.0.0",
     "@babel/node": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
+    "faker": "^4.1.0",
     "nodemon": "^1.18.3"
   },
   "dependencies": {
