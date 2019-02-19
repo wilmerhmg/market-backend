@@ -1,7 +1,7 @@
 import { pictures } from "../config/init.data";
 
 module.exports = (sequelize, DataType) => {
-   const Picture = sequelize.define('Picture', {
+   const Picture = sequelize.define('Pictures', {
       id_picture: {
          type: DataType.UUID,
          primaryKey: true,

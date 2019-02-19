@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f206b7e0-4818-4bfc-b4cc-5c2b246825bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/routes/posts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/articles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/articles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/config/init.data.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/config/init.data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/models/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/models/categories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/models/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/models/pictures.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/models/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/models/articles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/models/stock.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/init.data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/init.data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/categories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pictures.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/articles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/articles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/articles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/articles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/articles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/pictures.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pictures.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/articles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/articles.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,26 +21,79 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/routes/articles.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config/init.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/routes/articles.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="304">
+                  <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/config/init.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/controllers/categories.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/models/articles.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="416">
+                  <caret line="82" column="64" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="64" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/controllers/articles.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/models/pictures.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/models/categories.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" column="17" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,9 +106,11 @@
     <findStrings>
       <find>'</find>
       <find>&quot;stock&quot;: ,</find>
+      <find>post_id</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
+      <replace>article_id</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -98,13 +144,14 @@
         <option value="$PROJECT_DIR$/src/controllers/categories.js" />
         <option value="$PROJECT_DIR$/src/models/posts.js" />
         <option value="$PROJECT_DIR$/src/routes/posts.js" />
-        <option value="$PROJECT_DIR$/src/config/init.data.json" />
         <option value="$PROJECT_DIR$/src/models/categories.js" />
-        <option value="$PROJECT_DIR$/src/models/articles.js" />
         <option value="$PROJECT_DIR$/src/models/gallery.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/controllers/articles.js" />
         <option value="$PROJECT_DIR$/src/config/init.js" />
+        <option value="$PROJECT_DIR$/src/controllers/articles.js" />
+        <option value="$PROJECT_DIR$/src/models/articles.js" />
+        <option value="$PROJECT_DIR$/src/config/init.data.json" />
+        <option value="$PROJECT_DIR$/src/models/pictures.js" />
         <option value="$PROJECT_DIR$/src/routes/articles.js" />
       </list>
     </option>
@@ -115,10 +162,11 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="747" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1783" />
+    <option name="y" value="40" />
+    <option name="width" value="1751" />
+    <option name="height" value="983" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -150,13 +198,13 @@
               <item name="market-backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="market-backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="market-backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="market-backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -209,35 +257,34 @@
       <workItem from="1550379903237" duration="3997000" />
       <workItem from="1550410335827" duration="6987000" />
       <workItem from="1550425323598" duration="18247000" />
-      <workItem from="1550523096926" duration="1041000" />
+      <workItem from="1550523096926" duration="8911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44420000" />
+    <option name="totallyTimeSpent" value="52290000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="747" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1783" y="40" width="1751" height="983" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2065131" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20596841" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32996634" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" sideWeight="0.4997367" weight="0.32970297" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49921012" visible="true" weight="0.3908397" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49921012" visible="true" weight="0.28731763" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007899" side_tool="true" weight="0.33903742" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32970297" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24985372" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13691416" />
@@ -376,13 +423,6 @@
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/categories.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/routes/categories.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -390,21 +430,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/init.data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="138" column="11" selection-start-line="138" selection-start-column="11" selection-end-line="138" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/posts.js" />
-    <entry file="file://$PROJECT_DIR$/src/models/pictures.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/models/articles.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-803" />
@@ -424,13 +450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/config/db.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -438,27 +457,6 @@
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/categories.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/articles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/articles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -500,10 +498,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/categories.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/sequelize/lib/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="809">
+          <caret line="1528" column="9" selection-start-line="1528" selection-start-column="9" selection-end-line="1528" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/articles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="82" column="64" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/init.data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291866">
+          <caret line="29591" column="17" selection-start-line="29591" selection-start-column="17" selection-end-line="29591" selection-end-column="17" />
+          <folding>
+            <element signature="e#2569#618292#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/articles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/pictures.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/categories.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/routes/articles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+        <state relative-caret-position="304">
+          <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
         </state>
       </provider>
     </entry>

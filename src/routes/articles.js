@@ -1,37 +1,74 @@
 module.exports = (app) => {
    const baseApi    = app.config.init.baseApi;
    const sequelize  = app.config.db.sequelize;
+   const Op         = app.config.db.sequelize.Op;
+   const Categories = app.config.db.models.Categories;
    const Articles   = app.config.db.models.Articles;
+   const Pictures   = app.config.db.models.Pictures;
    const Controller = app.controllers.articles;
 
    app.get(`${baseApi}articles/find`, (req, res) => {
 
-      let limit  = req.body.limit  || 20;
-      let offset = req.body.offset || 0;
-      let search = req.body.search || null;
+      let paginator = Controller.buildPagination(req);
+      let search    = req.query.search || null;
+      let filter    = Controller.buildFilters(req);
+      let having    = Controller.buildHaving(req);
 
       Articles.findAll({
          attributes: [
-            'id_post',
+            sequelize.literal('SQL_CALC_FOUND_ROWS id_post'),
             'sku',
             'title',
             'price',
             'stock',
             [sequelize.literal(
-               `MATCH (title,description) AGAINST ( ${sequelize.escape(search)} IN BOOLEAN MODE)`
+               `MATCH (title,description,sku) AGAINST ( ${sequelize.escape(search)} IN BOOLEAN MODE)`
             ), 'score']
          ],
+         limit: paginator.limit,
+         offset: paginator.offset,
+         where: filter,
+         having: having,
          order: [
             [
                sequelize.literal('score'),
                'DESC'
-            ]
+            ],
+            ['title', 'ASC']
          ],
          raw: true //Don't create DAO model
-      }).then(BunchCategories => {
-         res.json(BunchCategories);
+      }).then(articles => {
+         res.json(articles);
       }).catch(error => {
-         res.json([error.message]);
+         res.json([]);
+      })
+   });
+
+   app.get(`${baseApi}articles/:id`, (req, res) => {
+      console.log(`Querying ${req.params.id}`)
+      Articles.findOne({
+         where: {
+            id_post: req.params.id
+         },
+         include: [{
+            model: Pictures,
+            required: false,
+            attributes: [
+               'url',
+               'thumbnail'
+            ]
+         }, {
+            model: Categories,
+            required: true,
+            attributes: [
+               'id_category',
+               'description'
+            ]
+         }]
+      }).then(article => {
+         !(article) ? res.status(404).json(null) : res.json(article);
+      }).catch(error => {
+         res.status(404).json(error);
       })
    });
 };

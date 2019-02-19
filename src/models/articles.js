@@ -68,7 +68,7 @@ module.exports = (sequelize, DataType) => {
          {
             type: 'FULLTEXT',
             name: 'text_idx',
-            fields: ['description', 'title']
+            fields: ['description', 'title','sku']
          }
       ]
    });
@@ -79,8 +79,8 @@ module.exports = (sequelize, DataType) => {
       /*A article has a category*/
       Articles.belongsTo(models.Categories, {foreignKey: 'category_id', foreignKeyConstraint: true});
 
-      /*A article has many images*/
-      Articles.hasMany(models.Picture, {foreignKey: 'article_id', foreignKeyConstraint: true});
+      /*A article has many pictures*/
+      Articles.hasMany(models.Pictures, {foreignKey: 'article_id', foreignKeyConstraint: true});
 
    };
 
