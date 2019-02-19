@@ -3,7 +3,7 @@
 var _init = require("../config/init.data");
 
 module.exports = function (sequelize, DataType) {
-  var Posts = sequelize.define('Posts', {
+  var Articles = sequelize.define('Articles', {
     id_post: {
       type: DataType.UUID,
       primaryKey: true,
@@ -56,30 +56,36 @@ module.exports = function (sequelize, DataType) {
       type: DataType.TEXT
     }
   }, {
-    tableName: 'posts',
+    tableName: 'articles',
     hooks: {
       // executed "after" `Model.sync(...)`
       afterSync: function afterSync(options) {
         // this = Model Load Fake data
-        this.bulkCreate(_init.posts);
+        this.bulkCreate(_init.articles);
       }
-    }
+    },
+    indexes: [// Add a FULLTEXT index [MATCH AGAINST ALGORITHM]
+    {
+      type: 'FULLTEXT',
+      name: 'text_idx',
+      fields: ['description', 'title']
+    }]
   });
   /*Create foreign keys and associations between models*/
 
-  Posts.associate = function (models) {
-    /*A post has a category*/
-    Posts.belongsTo(models.Categories, {
+  Articles.associate = function (models) {
+    /*A article has a category*/
+    Articles.belongsTo(models.Categories, {
       foreignKey: 'category_id',
       foreignKeyConstraint: true
     });
-    /*A post has many images*/
+    /*A article has many images*/
 
-    Posts.hasMany(models.Picture, {
-      foreignKey: 'post_id',
+    Articles.hasMany(models.Picture, {
+      foreignKey: 'article_id',
       foreignKeyConstraint: true
     });
   };
 
-  return Posts;
+  return Articles;
 };

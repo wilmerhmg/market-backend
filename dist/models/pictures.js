@@ -34,7 +34,7 @@ module.exports = function (sequelize, DataType) {
       }
     }
   }, {
-    tableName: 'posts_gallery',
+    tableName: 'article_pictures',
     hooks: {
       // executed "after" `Model.sync(...)`
       afterSync: function afterSync(options) {
@@ -47,8 +47,8 @@ module.exports = function (sequelize, DataType) {
 
   Picture.associate = function (models) {
     /*A image has a post*/
-    Picture.belongsTo(models.Posts, {
-      foreignKey: 'post_id',
+    Picture.belongsTo(models.Articles, {
+      foreignKey: 'article_id',
       foreignKeyConstraint: true
     });
   };
