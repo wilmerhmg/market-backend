@@ -3,7 +3,7 @@
 var _init = require("../config/init.data");
 
 module.exports = function (sequelize, DataType) {
-  var Picture = sequelize.define('Picture', {
+  var Picture = sequelize.define('Pictures', {
     id_picture: {
       type: DataType.UUID,
       primaryKey: true,

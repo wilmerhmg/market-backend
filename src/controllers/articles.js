@@ -1,5 +1,18 @@
 module.exports = function (app) {
    const Op = app.config.db.sequelize.Op;
+   const Se = app.config.db.sequelize;
+
+   /**
+    * Return total found rows from select
+    * @param records
+    * @return Object*/
+   this.getFoundRows = (records) => {
+      return Se.query(`SELECT FOUND_ROWS() AS FoundRows`, {
+         type: Se.QueryTypes.SELECT
+      }).then(Found => {
+         return {total: Found[0].FoundRows, rows: records};
+      });
+   };
 
    /**
     * Building Having for Computed columns in select.

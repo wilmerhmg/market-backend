@@ -68,7 +68,7 @@ module.exports = function (sequelize, DataType) {
     {
       type: 'FULLTEXT',
       name: 'text_idx',
-      fields: ['description', 'title']
+      fields: ['description', 'title', 'sku']
     }]
   });
   /*Create foreign keys and associations between models*/
@@ -79,9 +79,9 @@ module.exports = function (sequelize, DataType) {
       foreignKey: 'category_id',
       foreignKeyConstraint: true
     });
-    /*A article has many images*/
+    /*A article has many pictures*/
 
-    Articles.hasMany(models.Picture, {
+    Articles.hasMany(models.Pictures, {
       foreignKey: 'article_id',
       foreignKeyConstraint: true
     });

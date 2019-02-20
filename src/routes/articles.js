@@ -17,10 +17,7 @@ module.exports = (app) => {
       Articles.findAll({
          attributes: [
             sequelize.literal('SQL_CALC_FOUND_ROWS id_post'),
-            'sku',
-            'title',
-            'price',
-            'stock',
+            'sku', 'title', 'price', 'stock',
             [sequelize.literal(
                `MATCH (title,description,sku) AGAINST ( ${sequelize.escape(search)} IN BOOLEAN MODE)`
             ), 'score']
@@ -30,15 +27,12 @@ module.exports = (app) => {
          where: filter,
          having: having,
          order: [
-            [
-               sequelize.literal('score'),
-               'DESC'
-            ],
+            [sequelize.literal('score'), 'DESC'],
             ['title', 'ASC']
          ],
          raw: true //Don't create DAO model
-      }).then(articles => {
-         res.json(articles);
+      }).then(Controller.getFoundRows).then(response => {
+         res.json(response);
       }).catch(error => {
          res.json([]);
       })
