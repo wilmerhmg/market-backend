@@ -7,7 +7,7 @@ Marketplace backend api for Technical Test https://condorlabs.io
 - Node JS
 - Unix OS (Mac OSX, Linux)
 
-Download and install
+##### Download and install
 ```
 $ git clone https://github.com/Dev-Wito/market-backend.git
 $ cd market-backend
@@ -71,3 +71,11 @@ You could make requests at `http://localhost:14002/marketplace/api/v1/`
 
 ### API Endpoints
 View [API Documentation on Swagger](https://app.swaggerhub.com/apis-docs/Dev-Wito/marketplace-backend/1.0.0)
+
+### About
+This is the source code of the backend in the technical test for entry into [CondorLabs](https://condorlabs.io)
+the technologies used are the following:
+   - [Sequelize](https://www.npmjs.com/package/sequelize)
+   - [MySQL2](https://www.npmjs.com/package/mysql2)
+   - [Consign](https://www.npmjs.com/package/consign)
+   - [Express](https://www.npmjs.com/package/express)
