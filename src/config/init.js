@@ -9,6 +9,6 @@ module.exports = {
 		dialect: "mysql",
 		reconnect: true,
 		operatorsAliases: false,
-		logging: !!(process.env.MRKP_BACK_PORT) ? false : console.log
+		logging: !!(process.env.MRKP_BACK_PORT) ? false : false //console.log
 	}
 };
