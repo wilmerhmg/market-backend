@@ -46,7 +46,7 @@ Server on port 14002
 The default backend port is `14002`
 
 ---
-#### Run development server
+#### Run environment server
 
 You just need
 ```
