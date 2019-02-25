@@ -1,7 +1,7 @@
 const faker  = require('faker/locale/en_US');
-const post   = require('../config/init.data').posts;
+const post   = require('../config/init.data');
 const nposts = [];
-
+/*
 faker.locale = "en";
 
 for(let x = 0; x < 10; x++) {
@@ -28,6 +28,10 @@ for(let item of post) {
          post_id: item.id_post
       });
    }
+}*/
+
+for(let item of post.articles) {
+   item.preview = `https://picsum.photos/120/80?image=${faker.random.number({max: 100, min: 1100})}`;
 }
 
-//console.log(JSON.stringify(g));
+console.log(JSON.stringify(post));

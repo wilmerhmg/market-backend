@@ -12,6 +12,8 @@ module.exports = function (app) {
   app.use(_express.default.json());
   app.use(function (req, res, next) {
     res.setHeader('X-Powered-By', 'CondorLabs');
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
   });
   console.log('Middleware load...');

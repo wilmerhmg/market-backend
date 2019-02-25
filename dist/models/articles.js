@@ -54,6 +54,18 @@ module.exports = function (sequelize, DataType) {
     },
     description: {
       type: DataType.TEXT
+    },
+    preview: {
+      type: DataType.STRING(256),
+      allowNull: false,
+      validate: {
+        notEmpty: {
+          args: true
+        },
+        len: {
+          args: [10, 256]
+        }
+      }
     }
   }, {
     tableName: 'articles',

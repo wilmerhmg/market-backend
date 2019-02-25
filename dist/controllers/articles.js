@@ -34,7 +34,7 @@ module.exports = function (app) {
     var having = {};
     var search = req.query.search;
     if (search) having = Object.assign(having, {
-      score: _defineProperty({}, Op.gt, 0)
+      'score': _defineProperty({}, Op.gt, 0)
     });
     return having;
   };

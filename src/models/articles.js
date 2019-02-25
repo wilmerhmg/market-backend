@@ -52,7 +52,19 @@ module.exports = (sequelize, DataType) => {
       },
       description: {
          type: DataType.TEXT,
-      }
+      },
+      preview: {
+         type: DataType.STRING(256),
+         allowNull: false,
+         validate: {
+            notEmpty: {
+               args: true
+            },
+            len: {
+               args: [10, 256]
+            }
+         }
+      },
 
    }, {
       tableName: 'articles',
@@ -68,7 +80,7 @@ module.exports = (sequelize, DataType) => {
          {
             type: 'FULLTEXT',
             name: 'text_idx',
-            fields: ['description', 'title','sku']
+            fields: ['description', 'title', 'sku']
          }
       ]
    });

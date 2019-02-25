@@ -16,12 +16,19 @@ module.exports = (app) => {
 
       Articles.findAll({
          attributes: [
-            sequelize.literal('SQL_CALC_FOUND_ROWS id_post'),
-            'sku', 'title', 'price', 'stock',
+            sequelize.literal('SQL_CALC_FOUND_ROWS id_post AS id_post'),
+            'sku', 'title', 'price', 'stock', 'preview', 'Articles.createdAt',
             [sequelize.literal(
-               `MATCH (title,description,sku) AGAINST ( ${sequelize.escape(search)} IN BOOLEAN MODE)`
+               `MATCH (title,Articles.description,sku) AGAINST ( ${sequelize.escape(search)} IN BOOLEAN MODE)`
             ), 'score']
          ],
+         include: [{
+            model: Categories,
+            required: true,
+            attributes: [
+               'description'
+            ]
+         }],
          limit: paginator.limit,
          offset: paginator.offset,
          where: filter,
@@ -34,12 +41,11 @@ module.exports = (app) => {
       }).then(Controller.getFoundRows).then(response => {
          res.json(response);
       }).catch(error => {
-         res.json([]);
+         res.json([error.message]);
       })
    });
 
    app.get(`${baseApi}articles/:id`, (req, res) => {
-      console.log(`Querying ${req.params.id}`)
       Articles.findOne({
          where: {
             id_post: req.params.id

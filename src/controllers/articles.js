@@ -25,7 +25,7 @@ module.exports = function (app) {
       let search = req.query.search;
 
       if(search) having = Object.assign(having, {
-         score: {[Op.gt]: 0}
+         'score': {[Op.gt]: 0}
       });
 
       return having;
